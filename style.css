@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    /* Define el tipo de letra de toda la página */
+
+    background-color: #e9ecef;
+    display: flex;
+    /* Activa Flexbox para organizar los elementos */
+
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+
+    align-items: center;
+    /* Centra verticalmente el contenido */
+
+    min-height: 100vh;
+    /* Hace que el body ocupe al menos toda la altura de la pantalla */
+
+    margin: 0;
+    /* Elimina el margen por defecto del navegador */
+}
+
+form {
+    background: white;
+    /* Fondo blanco para el formulario */
+
+    padding: 30px;
+    /* Espacio interno alrededor del contenido */
+
+    border-radius: 12px;
+    /* Bordes redondeados */
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    /* Sombra para dar efecto de tarjeta */
+
+    width: 350px;
+    /* Ancho fijo del formulario */
+}
+
+h2 { 
+    text-align: center; 
+    /* Centra el texto del título */
+
+    color: #333; 
+    /* Color gris oscuro */
+}
+
+div { 
+    margin-bottom: 15px; 
+    /* Espacio entre cada grupo de campos */
+}
+
+label { 
+    display: block; 
+    /* Hace que el label ocupe toda la línea */
+
+    margin-bottom: 5px; 
+    /* Espacio entre label e input */
+
+    font-weight: 600; 
+    /* Texto un poco más grueso */
+
+    color: #555; 
+    /* Color gris */
+}
+
+input, select {
+    width: 100%;
+    /* Ocupan todo el ancho disponible */
+
+    padding: 10px;
+    /* Espacio interno */
+
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+
+    border-radius: 6px;
+    /* Bordes redondeados */
+
+    box-sizing: border-box;
+    /* Incluye padding y borde dentro del ancho total */
+}
+
+.contenedor-botones {
+    display: flex;
+    /* Usa Flexbox para alinear botones */
+
+    gap: 10px;
+    /* Espacio entre botones */
+
+    margin-top: 20px;
+    /* Separación superior */
+}
+
+button {
+    flex: 1;
+    /* Hace que ambos botones ocupen el mismo espacio */
+
+    padding: 12px;
+    /* Tamaño interno del botón */
+
+    border: none;
+    /* Quita el borde por defecto */
+
+    border-radius: 6px;
+    /* Bordes redondeados */
+
+    color: white;
+
+    cursor: pointer;
+    /* Cambia el cursor a mano al pasar encima */
+
+    font-weight: bold;
+}
+
+.btn-guardar { 
+    background-color: #28a745;    
+}
+
+.btn-limpiar { 
+    background-color: #6c757d; 
+}

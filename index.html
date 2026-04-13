@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsive (se adapte a celulares y tablets) -->
+
+    <title>Tarea Registro REST</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlaza el archivo CSS externo para dar estilos a la página -->
+</head>
+
+<body>
+
+    <form id="miFormulario">
+        <!-- Formulario HTML para capturar datos del usuario -->
+        <!-- id sirve para manipularlo desde JavaScript -->
+
+        <h2>Formulario de Registro</h2>
+        <div>
+            <label for="name">Nombre:</label>
+            <!-- Etiqueta del campo -->
+
+            <input type="text" id="name" required>
+            <!-- required obliga a llenarlo antes de enviar -->
+        </div>
+        <!-- Campo para el apellido -->
+        <div>
+            <label for="lastName">Apellido:</label>
+            <input type="text" id="lastName" required>
+        </div>
+        <!-- Campo para el correo -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <!-- type="email" valida automáticamente el formato -->
+        </div>
+        <!-- Campo para el número cuenta -->
+        <div>
+            <label for="account">Cuenta:</label>
+            <input type="text" id="account" required>
+        </div>
+        <!-- Campo para el promedio -->
+        <div>
+            <label for="avg">Promedio (AVG):</label>
+            <input type="number" step="0.1" id="avg" required>
+            <!-- step="0.1" permite decimales -->
+        </div>
+
+        <div>
+            <label for="country">País:</label>
+
+            <select id="country" required>
+                <!-- Lista desplegable -->
+
+                <option value="">Cargando países...</option>
+                <!-- Opción inicial mientras se cargan los países -->
+            </select>
+        </div>
+
+        <div class="contenedor-botones">
+            <!-- Contenedor para agrupar los botones -->
+            <!-- Guardamos los datos-->
+            <button type="submit" class="btn-guardar">Guardar</button>
+            <!-- Limpiamos el formulario-->
+            <button type="reset" class="btn-limpiar">Limpiar</button>
+
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+    <!--Con esto, enlazamos un archivo JavaScript -->
+</body>
+
+</html>
